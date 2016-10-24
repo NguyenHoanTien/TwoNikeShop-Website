@@ -3,7 +3,7 @@ Students:   Nguyen Hoan Tien    - s3515589
             Luu Thao Ly         - s3410053
 
 link to website:
-            twonikeshop.appspot.com
+            2.twonikeshop.appspot.com
 
 Reference to
              slide show    : http://zlatanblog.com/2012/03/23/pure-css3-slidesho/
