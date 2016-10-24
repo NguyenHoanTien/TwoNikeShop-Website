@@ -1,0 +1,36 @@
+html{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 100%;
+    background-color: #fdfdfd;
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:0px;
+    left:0px;
+}
+
+#page {
+    width: 1000px;
+    height: auto;
+    margin-top: 130px;
+    margin-left: 120px;
+    margin-bottom: 17px;
+}
+
+#page h1 {
+    font-size: 50px;
+    color: #f46a48;
+    text-align: center;
+}
+
+#graph img{
+    margin-left: 140px;
+    width: 70%;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head lang="en">
+   <head lang="en">
+        <meta charset="UTF-8">
+        <title>Product detail page</title>
+        <link rel="stylesheet" href="../stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/product-Detail.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/etalage.css">
+        <link rel='stylesheet' href='../js/Fixsize.js' type='text/css'/>
+        <script src="../js/Fixsize.js"></script>
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/jquery.etalage.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".dropdown img.flag").addClass("flagvisibility");
+
+                $(".dropdown dt a").click(function () {
+                    $(".dropdown dd ul").toggle();
+                });
+
+                $(".dropdown dd ul li a").click(function () {
+                    var text = $(this).html();
+                    $(".dropdown dt a span").html(text);
+                    $(".dropdown dd ul").hide();
+                    $("#result").html("Selected value is: " + getSelectedValue("sample"));
+                });
+
+                function getSelectedValue(id) {
+                    return $("#" + id).find("dt a span.value").html();
+                }
+
+                $(document).bind('click', function (e) {
+                    var $clicked = $(e.target);
+                    if (!$clicked.parents().hasClass("dropdown"))
+                        $(".dropdown dd ul").hide();
+                });
+
+
+                $("#flagSwitcher").click(function () {
+                    $(".dropdown img.flag").toggleClass("flagvisibility");
+                });
+            });
+        </script>
+        <script>
+            jQuery(document).ready(function ($) {
+
+                $('#etalage').etalage({
+                    thumb_image_width: 300,
+                    thumb_image_height: 300,
+                    show_hint: true,
+                    click_callback: function (image_anchor, instance_id) {
+                    }
+                });
+                // This is for the dropdown list example:
+                $('.dropdownlist').change(function () {
+                    etalage_show($(this).find('option:selected').attr('class'));
+                });
+
+            });
+        </script>
+    </head>
+</head>
+
+<!--=================================================================================================================-->
+ <body onload="Load()">
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="../images/nav.png">
+            </div>
+            <div id="logo">
+                <a href="/">
+                    <img src="../images/logo.png" alt="Logo" title="Nike Shoes !!!"></a>
+            </div>
+            <div id="nav_wrapper">
+                {% for category in categories %}
+                     <a href="../category/{{category.key.id()}}">{{category.name}} </a>
+                {% endfor %}
+            </div>
+            <ul id="user">
+                <li>
+                    <img id="user-ic" src="../images/login_icon.png" alt="user">
+                    <ul class="sub">
+                        <li><a href="../login">Login</a></li>
+                        <li><a href="../register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="add">
+                <a href="#">
+                    <img src="../images/bag_icon.png" alt="add" title="Shopping Cart"></a>
+            </div>
+            <div id="search">
+                <a href="#">
+                    <img src="../images/search_icon.png" alt="search"></a>
+            </div>
+        </nav>
+
+
+        <div id="page">
+                <div id="type">
+                    <a id="p-name">{{ product.name}} / </a><a id="p-type"> {{ product.type}}</a>
+                </div>
+                    <div class="single_image">
+                        <ul id="etalage">
+                            <li>
+                                <a href="#">
+                                    <img class="etalage_thumb_image" src={{product.image}} />
+                                    <img class="etalage_source_image" src={{product.image}} />
+                                </a>
+                            </li>
+                            <li>
+                                <img class="etalage_thumb_image" src={{product.image1}} />
+                                <img class="etalage_source_image" src={{product.image1}} />
+                            </li>
+                            <li>
+                                <img class="etalage_thumb_image" src={{product.image2}} />
+                                <img class="etalage_source_image" src={{product.image2}} />
+                            </li>
+                            <li>
+                                <img class="etalage_thumb_image" src={{product.image3}} />
+                                <img class="etalage_source_image" src={{product.image3}} />
+                            </li>
+                            <li>
+                                <img class="etalage_thumb_image" src={{product.image4}} />
+                                <img class="etalage_source_image" src={{product.image4}} />
+                            </li>
+                            <li>
+                                <img class="etalage_thumb_image" src={{product.image5}} />
+                                <img class="etalage_source_image" src={{product.image5}} />
+                            </li>
+                        </ul>
+                    </div>
+                     <div id="P-data">
+                        <ul>
+                            <li>Style: {{ product.style }}</li>
+                            <li>Color: {{ product.color }}</li>
+                            <li>Price: ${{ product.price }}</li>
+                        </ul>
+                    </div>
+                    <div id="size">
+                        <select name="size" form="bootform">
+                            <option value="1">7</option>
+                            <option value="2">8</option>
+                            <option value="3">9</option>
+                            <option value="4">10</option>
+                            <option value="5">11</option>
+                            <option value="6">12</option>
+                            <option value="7">13</option>
+                            <option value="8">14</option>
+                            <option value="9">15</option>
+                            <option value="10">16</option>
+                        </select>
+                    </div>
+                    <div id="Add-Bag">
+                        <a href="#">Add to bag</a>
+                    </div>
+                    <div id="description">
+                        <h3>Description: </h3>
+                        {{ product.description|safe }}&nbsp
+                    </div>
+        </div>
+                <!--                               Footer structure                             -->
+        <div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="../images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="../images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="../images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="../images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="../images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="../contact">Contact Us</a>
+                    <a href="../term">Terms of Use</a>
+                    <a href="../privacy">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="../images/bar.png">
+            </div>
+        </div>
+
+</body>
+</html>
+{% endautoescape %}

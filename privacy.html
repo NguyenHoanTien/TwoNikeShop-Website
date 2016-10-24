@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Privacy and Policy page</title>
+        <link rel="stylesheet" href="stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/privacy.css" type="text/css" />
+        <link rel='stylesheet' href='js/Fixsize.js' type='text/css'/>
+        <script src="js/Fixsize.js"></script>
+
+    </head>
+    <body>
+        <!--                           Navigation bar structure                         -->
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="images/nav.png">
+            </div>
+            <div id="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="Logo" title="Nike Shoes !!!"></a>
+            </div>
+            <div id="nav_wrapper">
+                {% for category in categories %}
+                     <a href="/category/{{category.key.id()}}">{{category.name}} </a>
+                {% endfor %}
+            </div>
+            <ul id="user">
+                <li>
+                    <img id="user-ic" src="images/login_icon.png" alt="user">
+                    <ul class="sub">
+                        <li><a href="login">Login</a></li>
+                        <li><a href="register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="add">
+                <a href="#">
+                    <img src="images/bag_icon.png" alt="add" title="Shopping Cart"></a>
+            </div>
+            <div id="search">
+                <a href="#">
+                    <img src="images/search_icon.png" alt="search"></a>
+            </div>
+        </nav>
+
+<!--                                Main page                           -->
+                 <div id= "content_privacy">
+            <h1>Privacy Policy</h1>
+            <p>Thank you for visiting our Website. We recently revised our Privacy Statement to make it easier for you to understand. This revised Statement, like our previous one, outlines the information we collect, how we may use and disclose it, and what your options are with respect to our practices. If you have any questions, please contact us at twostore@gmail.com </p>
+            <h2>Privacy Statement </h2>
+            <p>Two Store believes in protecting your information. With this in mind, we have adopted this Privacy Statement, which describes the information we may collect when you use visit our websites (each a "Site"), sign up for a brand loyalty membership (each a "Loyalty Program"), or shop in our stores (each a "Store") (collectively the "Services"). By using this Site, you agree to the collection, use and disclosure of your personal information as described in this Statement. If you do not, please do not use the Site.</p>
+            <p><b>Information Collection </b></p>
+            <p>1  <i>Information You Provide to Us</i>. We only collect certain information from you when you provide it to us, such as when you: (1) register; (2) place an order; (3) complete a survey or product review; (4) participate in one of our promotions; (5) sign up for VIP, Star Club, or other Loyalty Program; or (6) contact us. The information we collect from you may include your name, age, mailing address, daytime telephone number, cell phone number, e-mail address, account user name and password, and payment information. If you use a third party login to register or otherwise link to us, we may receive certain information about you from the third party (such as a social network) based on your registration and privacy settings on that third party service.</p>
+            <p>2  <i>Registration</i>. We encourage you to register when shopping on our Site; however registration is not required. Our Registration Form requires users to provide contact information (such as name, age, mailing address, daytime telephone number, cell phone number, e-mail address and password). You must be 13 years of age or older to register. Registration helps us to provide you with a quick and simple checkout experience. The customer contact information you provide will be used to contact you concerning the status of an order, answer your questions and, unless you choose to opt-out, to send you communications about upcoming sales, contests, promotions and product information. You acknowledge and agree that you are responsible for maintaining the confidentiality of your registration information and password. You are responsible for all use of the Site under your registered account. If you would like, you can also fill out a customer profile. While it is not required, information obtained from the customer profile questions helps us to learn more about our customers and is used to improve your shopping experience and to provide you with more relevant content and advertising.</p>
+            <p>3  <i>Information We Automatically Collect</i>. We may use cookies, web beacons, pixel tags, log files, or other technologies to automatically collect certain information when you use our Site, or interact with our emails or advertisements on our Site or other websites. A cookie is a small data file that is sent to your browser from a web server and stored on your computer's hard drive. For example, we may automatically collect information such as your IP address, geolocation data, unique user ID, cell phone model, operating system, and carrier, and Internet Service Provider. We also may collect information about your use of our Services, such as the time you spend using the Site, the number of times you return, whether you click-through, open, or forward links, emails, and ads, and other Site usage data. These technologies, such as cookies, allow us to keep track of your order as you shop on our Site, recognize registered users when they visit, and to provide those customers with information and advertising that is more relevant to them.</p>
+            <p><b>Information Use</b></p>
+            <p> We may use the information we collect from and about you for the following purposes:<br>
+
+                1  To provide you with a quick and simple checkout experience;<br>
+                2  To process your orders, contact you concerning the status of an order, answer any of your questions, or otherwise contact and communicate with you;<br>
+                3  To provide you with customized content, targeted offers, and advertising on the Site, other websites or via text message, and to contact you about upcoming Eastbay sales, promotions, and product information;<br>
+                4  To allow you to participate in promotions;<br>
+                5  To help us learn more about our Site visitors, Loyalty Program members, and customers and to improve their shopping experience and our business;<br>
+                6  To address problems with the Site, our business or our products and services and to protect the security of the Site and our business;<br>
+                7  To contact you about upcoming promotions and offers on behalf of our partners<br>
+                8  Otherwise, as described to you at the point of collection.</p>
+            <p><b>Updating Your Information</b></p>
+            <p>Please note that, at all times, you are responsible for updating the personal information you provide to us. If you have registered with us or participate in a Loyalty Program, you may update your personal information through your registered account or Loyalty Program account. If you elect to delete some or all of your personal information, keep in mind that we may retain transactional data in accordance with various laws, regulations and our Company's retention policy.</p>
+            <p><b>Changes To Our Privacy Statement</b></p>
+            <p>We may amend this Privacy Statement at any time. If we make any material changes in the way we collect, use, and/or share your personal information, we will notify you by sending you an e-mail at the last e-mail address that you provided us, and/or by prominently posting notice of the changes on the Site . Any material changes to this Privacy Statement will be effective upon the earlier of thirty (30) calendar days following our transmittal of an e-mail notice to you or thirty (30) calendar days following our posting of the notice of changes.</p>
+            <p><b>Children's Privacy</b></p>
+            <p><b>We do not sell products for purchase by children</b>. We sell children's products for purchase by adults. We do not direct the Website to, nor do we knowingly collect any personal information from, children under the age of thirteen.<b> You must be 13 years of age or older to submit personal information to us, including to register or place an order on the Website or participate in one of our online promotions</b>. Please see our Terms of Use for additional information regarding the use of this Website.</p>
+            <p><b>Questions/Contacting Us</b></p>
+            <p>Should you have any questions regarding this Privacy Statement or our data handling practices you may contact our Privacy Administrator by e-mail at twostore@gmail.com.</p>
+
+        </div>
+
+        <!--                               Footer structure                             -->
+        <div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="contact">Contact Us</a>
+                    <a href="term">Terms of Use</a>
+                    <a href="privacy">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="images/bar.png">
+            </div>
+        </div>
+    </body>
+</html>
+{% endautoescape %}

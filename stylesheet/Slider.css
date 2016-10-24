@@ -1,0 +1,116 @@
+#slider {
+    position: relative;
+    z-index: 0;
+}
+#slider .imgs {
+    position: absolute;
+    z-index: 0;
+}
+
+#slider .imgs img {
+    width: 1253px;
+    height: 663px;
+    position:absolute;
+    top:76px;
+    left: 10px;
+    transition: 1s;
+    visibility:hidden;
+}
+
+#Snav {
+    display:block;
+    width: 1000px;
+    height: 404px;
+    position:absolute;
+    top:50px;
+    left: 170px;
+}
+#SnavBottom {
+    display: none;
+}
+
+#SnavUp {
+    display:block;
+    width:95%;
+    height:20%;
+}
+
+#Scircles{
+    display:block;
+    width:5%;
+    height:15%;
+    float: none;
+}
+
+#S0 {
+    position: relative;
+    left: 360px;
+    top: 480px;
+}
+
+#S1 {
+    position: relative;
+    left: 420px;
+    top: 492.5px; 
+}
+
+#S2 {
+    position: relative;
+    left: 440px;
+    top: 492.5px; 
+}
+
+#S3 {
+    position: relative;
+    left: 460px;
+    top: 492.5px; 
+}
+
+#Scircles ul {
+    margin:0;
+    float:right;
+    display:block;
+    width:100%;
+    height:100%;
+    visibility:hidden;
+}
+
+#Scircles li {
+    background-repeat: no-repeat;
+    list-style:none;
+    display:inline-block;
+    border: 1px solid #f46a48;
+    width:25%;
+    height:90%;
+    margin-left:0%;
+    float:right;     
+    visibility:hidden;
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+}
+
+#SnavMiddle {
+    display:block;
+    width:100%;
+    position: relative;
+    top: 250px;
+    left: -197px;
+}
+
+#Sleft {
+    width:8%;
+    height:100%;
+    float:left;
+    margin-left:3%;
+
+}
+
+#Sright {
+    width:8%;
+    height:100%;
+    float:right;
+    margin-top: 5px;
+    margin-right: -290px;
+}

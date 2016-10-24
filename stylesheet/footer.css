@@ -1,0 +1,86 @@
+#footer {
+    width: 1200px;
+    margin-left: 25.5px;
+    padding-top: 10px;
+    clear: both;
+}
+
+.icon img {
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+    margin-left: -30px;
+}
+#FB_icon {
+   left: 409px;
+   width: 20px;
+}
+#TT_icon {
+   left: 509px;
+   width: 40px;
+}
+#P_icon{
+
+   left: 609px;
+   width: 35px;
+}
+#In_icon{
+   left: 709px;
+   width: 40px;
+}
+#G_icon{
+   left: 809px;
+   width: 50px;
+}
+
+#footer_wrapper {
+    vertical-align: middle;
+    display: inline-block;
+    width: 800px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 195px;
+}
+#footer_wrapper a {
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 16px;
+}
+
+#footer_wrapper a,visited {
+    display:inline-block;
+    text-decoration: none;
+    color: #343535;
+}
+
+
+#copyright {
+    color: #f46a48;
+    width: 500px;
+    font-size: 12px;
+    margin-left: 520px;
+    padding-bottom: 30px;
+}
+
+#grad {
+    height: 1px;
+    width: 800px;
+    background: #f46a48;
+    margin-left: 210px;
+    margin-top: 80px;
+    margin-bottom: -20px;
+}
+
+#bar {
+    position: relative;
+}
+
+#left-bar {
+    position: absolute;
+    margin-left: -27px;
+    top: -3465px;
+    width: 1%;
+    height: 3500px;
+    background-color: #fdfdfd;
+}

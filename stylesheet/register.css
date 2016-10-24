@@ -1,0 +1,115 @@
+html{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 100%;
+    background-color: #fdfdfd;
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:0px;
+    left:0px;
+}
+
+#blank {
+    margin-bottom: 200px;
+}
+
+#container{
+    float: left;
+    width: 500px;
+    margin-left: 220px;
+    margin-top: 120px;
+    height: 550px;
+    width: 900px;
+    margin-bottom: -32px;
+}
+
+#container h1 {
+  color: #343535;
+  font-size: 30px;
+  margin-bottom: 70px;
+    margin-left: 60px;
+}
+
+#container label {
+  font-size: 16px;
+  color: #343535;
+}
+
+#bk-1 {
+  margin-bottom: 30px;
+}
+
+.input {
+  width: 320px;
+  height: 35px;
+  font-size: 18px;
+  border: 1.5px solid #f46a48;
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+#lsub {
+    border: 1px solid #f46a48;
+    position: relative;
+    left: 460px;
+    top: -360px;
+    padding: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #fdfdfd;
+    font-weight: bold;
+    background-color: #f46a48;
+}
+
+#lsub:hover {
+  background-color: #FF6347;
+}
+
+#right-info {
+    width: 400px;
+    position: relative;
+    top: -410px;
+    left: 460px;
+}
+
+#gender {
+    position: relative;
+    top: 5px;
+}
+
+#right-info input {
+    height: 37px;
+}
+
+.radio-inline {
+    display: inline-block;
+    width: 150px;
+    position: relative;
+    bottom: 10px;
+}
+
+.radio-inline input {
+    position: relative;
+    top: 12px;
+    margin-right: 20px;
+}
+#agree {
+    width: 500px;
+}
+
+#agree input {
+    position: relative;
+    top: 13px;
+    left: 4px;
+    margin-right: 30px;
+}
+

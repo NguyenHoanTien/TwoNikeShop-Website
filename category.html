@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>product page</title>
+        <link rel="stylesheet" href="../stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/product.css" type="text/css" />
+        <link rel='stylesheet' href='../js/Fixsize.js' type='text/css'/>
+        <script src="../js/Fixsize.js"></script>
+    </head>
+    <body onload="Load()">
+<!--                           Navigation bar structure                         -->
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="../images/nav.png">
+            </div>
+            <div id="logo">
+                <a href="../">
+                    <img src="../images/logo.png" alt="Logo" title="Nike Shoes !!!"></a>
+            </div>
+            <div id="nav_wrapper">
+                {% for category in categories %}
+                     <a href="/category/{{category.key.id()}}">{{category.name}} </a>
+                {% endfor %}
+            </div>
+            <ul id="user">
+                <li>
+                    <img id="user-ic" src="../images/login_icon.png" alt="user">
+                    <ul class="sub">
+                        <li><a href="../login">Login</a></li>
+                        <li><a href="../register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="add">
+                <a href="#">
+                    <img src="../images/bag_icon.png" alt="add" title="Shopping Cart"></a>
+            </div>
+            <div id="search">
+                <a href="#">
+                    <img src="../images/search_icon.png" alt="search"></a>
+            </div>
+        </nav>
+
+    <!--===============================Images slide========================================-->
+
+        <div class="div3">
+            <div id="type">
+                <h2> {{category.name}}  'S NIKE</h2>
+            </div>
+            <div id="product">
+            {% for product in products%}
+                {% if product.category == category.key%}
+                    <div class="img">
+                        <div class="desc">
+                            <p>{{product.name}}</p>
+                        </div>
+                <a target="_blank" >
+                    <img src="{{ product.image }}"></a>
+                <p class="price">${{ product.price}}</p>
+                <a class="view" href="/product/{{ product.key.id() }}">View</a>
+            </div>
+                {%endif%}
+            {% endfor %}
+            </div>
+        </div>
+        <div id="blank">
+            <p>   </p>
+        </div>
+        <!--                               Footer structure                             -->
+        <div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="../images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="../images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="../images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="../images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="../images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="../contact">Contact Us</a>
+                    <a href="../term">Terms of Use</a>
+                    <a href="../privacy">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="../images/bar.png">
+            </div>
+        </div>
+
+
+
+</body>
+</html>
+{% endautoescape %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

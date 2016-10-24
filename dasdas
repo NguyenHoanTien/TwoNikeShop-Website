@@ -1,0 +1,16 @@
+#adm {
+    position: absolute;
+    top:0px;
+    left: 1000px;
+    width: 150px;
+    border: 1px solid red;
+}
+#adm a {
+    width: 150px;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #f46a48;
+}

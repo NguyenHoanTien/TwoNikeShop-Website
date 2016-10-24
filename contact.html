@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Contact us page</title>
+        <link rel="stylesheet" href="stylesheet/navigationbar.css" type="text/css" />
+                <link rel="stylesheet" href="stylesheet/contact.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/footer.css" type="text/css" />
+        <link rel='stylesheet' href='js/Fixsize.js' type='text/css'/>
+        <script src="js/Fixsize.js"></script>
+         <link rel='stylesheet' href='contact.js' type='text/css'/>
+        <script src="contact.js"></script>
+
+    </head>
+       <body onload="Load()">
+        <!--                           Navigation bar structure                         -->
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="images/nav.png">
+            </div>
+            <div id="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="Logo" title="Nike Shoes !!!"></a>
+            </div>
+            <div id="nav_wrapper">
+                {% for category in categories %}
+                     <a href="/category/{{category.key.id()}}">{{category.name}} </a>
+                {% endfor %}
+            </div>
+            <ul id="user">
+                <li>
+                    <img id="user-ic" src="images/login_icon.png" alt="user">
+                    <ul class="sub">
+                        <li><a href="login">Login</a></li>
+                        <li><a href="register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="add">
+                <a href="#">
+                    <img src="images/bag_icon.png" alt="add" title="Shopping Cart"></a>
+            </div>
+            <div id="search">
+                <a href="#">
+                    <img src="images/search_icon.png" alt="search"></a>
+            </div>
+        </nav>
+
+<!--                                Main page                           -->
+ <section id="hire">
+            <h1>Contact Us</h1>
+            <div id="info-p">
+            <h2>By phone</h2>
+            <p>To contact Customer Service by phone between 8 AM - 1 AM Eastern Time </p>
+            <p>Customer Service for orders placed online: 1.800.001.001</p>
+            <p>Customer Service for orders placed by phone or general information: 1.800.002.002 </p>
+            <p>Customer Service for AutoShip orders: 1.800.003.003</p>
+            <p>To place an order by phone 24 hours a day, 7 days a week</p>
+            <p>HSN: 1.800.000.000</p>
+            </div>
+            <div id="info-e">
+            <h2>By Email</h2>
+                <a href="#">twoshop@gmail.com</a>
+            </div>
+            <form>
+                <h3>Message</h3>
+	            <div class="field name-box">
+		            <input type="text" id="name" placeholder="Who Are You?"/>
+        		    <label for="name">Name</label>
+		            <span class="ss-icon">check</span>
+	            </div>
+
+	            <div class="field email-box">
+		            <input type="text" id="email" placeholder="name@email.com"/>
+		            <label for="email">Email</label>
+		            <span class="ss-icon">check</span>
+	            </div>
+
+	            <div class="field msg-box">
+		            <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+		            <label for="msg">Msg</label>
+		            <span class="ss-icon">check</span>
+	            </div>
+
+	            <input class="button" type="submit" value="Send" />
+            </form>
+        </section>
+            <div id="blank"></div>
+
+        <!--                               Footer structure                             -->
+        <div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="contact">Contact Us</a>
+                    <a href="term">Terms of Use</a>
+                    <a href="privacy">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="images/bar.png">
+            </div>
+        </div>
+    </body>
+</html>
+

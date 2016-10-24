@@ -1,0 +1,14 @@
+<h1> Edit your product </h1>
+<form method ='post' action ='/productEdit/{{ product.key.id() }}'>
+<p>Name: </p> 
+          <input name ='name' type ="text" value ='{{ product.name }}' required/><br>
+          <p>Image: </p>
+          <input name ='image' type ='text' value ='{{ product.image }}' required/><br>
+          <p>Description: </p><br>
+          <textarea rows="10" cols="80" name ='description' type ='text' id ='description'>{{ product.description }}</textarea><br>
+		  <p>Year: </p><br>
+		  <input name ='year' type ='text' value ='{{ product.year }}' required/><br>
+		  <br>
+		  <input type ='submit' value ="Finish editing"/>
+		</form>
+		</div>

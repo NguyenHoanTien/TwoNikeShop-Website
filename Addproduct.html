@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Add product page</title>
+        <link rel="stylesheet" href="stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/add-product.css" type="text/css" />
+        <link rel='stylesheet' href='js/Fixsize.js' type='text/css'/>
+        <script src="js/Fixsize.js"></script>
+        <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"> type = 'text/javascript'</script>
+    </head>
+    <body onload="Load()">
+        <!--                           Navigation bar structure                         -->
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="../images/nav-ad.jpg">
+            </div>
+            <div id="logo">
+                    <img src="../images/logo.png" alt="Logo" title="Nike Shoes !!!">
+            </div>
+            <div id="wrap">
+                <a href="../addcategory">Categogy</a>
+                <a href="../Addproduct">Add product</a>
+                <a href="../productDisplay">Product</a>
+            </div>
+            <div id="adm">
+                <a href="../adminview">Admin shop</a>
+            </div>
+            <div id="logout">
+                <a href="/">logout</a>
+            </div>
+        </nav>
+        <!--                             Product                              -->
+        <div id="page">
+            <div id="title">
+                <h2>Add new product</h2>
+            </div>
+            <div id="content">
+		    <div class="animate form">
+                <form action="/Addproduct" method="post"  onsubmit="return validateForm()">
+                    <div class="info">
+                        <h3>1. Info</h3>
+                        <ul class="left">
+                             <p for="name">Name:</p>
+                                <input class="edit" type='text' name='name' required/>
+                             <p for="style">Style:</p>
+                                <input class="edit" type='text' name='style'required/>
+                        </ul>
+                        <ul class="right">
+                             <p for="price">Price:</p>
+                                <input class="edit" type='number' name='price'required/>
+                             <p for="color">Color:</p>
+                                <input class="edit" type='text' name='color'required/>
+                        </ul>
+                    </div>
+                    <div class="info-u">
+                        <ul>
+                            <label for="category">2. Category</label>
+                            <select name="category">
+                            {% for category in categories %}
+                                <option>{{ category.name }}</option>
+                            {% endfor %}
+                        </select>
+                        </ul>
+                    </div>
+                    <div class="info-u">
+                        <ul>
+                            <label for="type">3. Type</label>
+                            <input class="edit" type='text' name='type' required/>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3>4. Image </h3>
+                        <ul class="left">
+                             <p for="image">Image 1:</p>
+                                <input class="edit" type='text' name='image' required/>
+                             <p for="image2">Image 3:</p>
+                                <input class="edit" type='text' name='image2' required/>
+                             <p for="image4">Image 5:</p>
+                                <input class="edit" type='text' name='image4' required/>
+                        </ul>
+                        <ul class="right1">
+                            <p for="image1">Image 2:</p>
+                                <input class="edit" type='text' name='image1' required/>
+                            <p for="image3">Image 4:</p>
+                                <input class="edit" type='text' name='image3' required/>
+                            <p for="image5">Image 6:</p>
+                                <input class="edit" type='text' name='image5' required/>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h3> 5. Description </h3>
+                        <textarea type = 'text' rows = '10' cols = '80' name = 'description'></textarea>
+                        <script>CKEDITOR.replace('description')</script>
+                    </div>
+                    <input id="sub" type='submit' value='Add Page'>
+                    <a     id="cancel" href='/category'>Cancel</a>
+                </form>
+            </div>
+        </div>
+</div>
+        <!--                               Footer structure                             -->
+<div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="../images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="../images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="../images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="../images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="../images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="../images/bar.png">
+            </div>
+        </div>
+    </body>
+</html>
+{% endautoescape %}

@@ -1,0 +1,21 @@
+html{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 100%;
+    background-color: #fdfdfd;
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:0px;
+    left:0px;
+}
+
+#blank {
+    margin-top: 699px;
+}

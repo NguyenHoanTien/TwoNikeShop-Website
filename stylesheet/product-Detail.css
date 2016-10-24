@@ -1,0 +1,170 @@
+html{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 100%;
+    background-color: #fdfdfd;
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:0px;
+    left:0px;
+}
+
+#type {
+    display: inline-block;
+    width: 800px;
+    height: 50px;
+    position: absolute;
+    left: 120px;
+    top: 130px;
+}
+
+#page {
+    float: left;
+    width: 1200px;
+    height: auto;
+    margin: 50px;
+    margin-top: 130px;
+    margin-bottom: -30px;
+}
+
+#type a {
+    position: relative;
+    left: 130px;
+    top: 15px;
+}
+
+#p-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #343535;
+}
+
+#p-type {
+    font-style: italic;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+#grad1 {
+    height: 1px;
+    width: 800px;
+    background: #f46a48;
+    margin-left: 210px;
+    position: relative;
+    top: 75px;
+}
+
+#details {
+    margin-bottom: -650px;
+}
+
+#description {
+    margin-top: 220px;
+    margin-left: 200px;
+    width: 950px;
+}
+#description h3 {
+    margin-left: 10px;
+}
+
+#description h4 {
+    opacity: 0.6;
+}
+#P-image {
+    position: absolute;
+    left: 210px;
+    top: 200px;
+    list-style-type: none;
+    z-index: 90;
+}
+ul#P-image, ul.sub {
+    list-style-type: none;
+}
+
+ul#P-image li {
+    width: 300px;
+    text-align: left;
+    position: absolute;
+    float: left;
+    margin-right: 4px;
+}
+
+ul#P-image img {
+    text-decoration: none;
+    display: block;
+    width: 300px;
+    background-repeat: no-repeat;
+}
+
+ul#P-image li ul li img{
+    display: block;
+    width: 700px;
+    line-height: 40px;
+    border: 1px solid #343535;
+}
+
+ul#P-image ul.sub {
+    display: none;
+    position: absolute;
+    top: -50px;
+    left: 270px;
+
+}
+
+ul#P-image li:hover .sub {
+    display: block;
+}
+
+#P-data {
+    margin-left: 550px;
+    margin-top: 125px;
+}
+#P-data li {
+    text-decoration: none;
+    list-style-type: none;
+    line-height: 2.5;
+    width: 600px;
+    color: #343535;
+}
+
+#size select {
+    margin-left: 590px;
+    margin-top: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid #f46a48;
+    box-shadow: 2px 2px 2px #f46a48;
+}
+
+#Add-Bag {
+    margin-left: 690px;
+    margin-top: -40px;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #f46a48;
+    box-shadow: 2px 2px 2px #f46a48;
+}
+
+#Add-Bag a {
+    text-decoration: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 5px;
+    display: block;
+    vertical-align: middle;
+    
+}
+
+#Add-Bag a,visited {
+    display:inline-block;
+    text-decoration: none;
+    color: #343535;
+}

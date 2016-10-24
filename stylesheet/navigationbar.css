@@ -1,0 +1,226 @@
+/* --------------- ********************************* ---------------
+                           Navigation bar option                    */
+nav {
+    position: absolute;
+    z-index: 90;
+}
+#nav-bar {
+    width: 1253px;
+    margin-left: 10px;
+}
+
+/*                              logo                            */
+#logo img {
+    position: absolute;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    top: 10px;
+    left: 120px;
+    width: 3%;
+    padding: 0;
+    float:left;
+}
+/*                       Men & Women product                    */
+#nav_wrapper {
+    text-align: center;
+    vertical-align: middle;
+    width: 750px;
+    height: 76px;
+    margin-left: 270px;
+    margin-top: -82px;
+    position: absolute;
+    z-index: 900;
+
+}
+
+#nav_wrapper a {
+    display: inline;
+    font-weight: bold;
+    width: 105px;
+    text-decoration: none;
+    float: left;
+    padding-top: 10px;
+}
+
+#nav_wrapper a,visited {
+    color: #f46a48;
+    display:block;
+    width: 70px;
+    margin-left: 49px;
+    padding-top: 33px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 19px;
+    text-decoration: none;
+}
+
+#nav_wrapper a:hover {
+    color: #f46a48;
+    text-decoration: none;
+    border: 1px solid #f46a48;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-bottom: 26px;
+    padding-top: 32px;
+}
+
+/*                          Account icon option                     */
+#user {
+    position: absolute;
+    left: 953px;
+    top: -22px;
+    list-style-type: none;
+}
+ul#user, ul.sub {
+    list-style-type: none;
+}
+
+ul#user li {
+    width: 125px;
+    text-align: left;
+    position: relative;
+    float: left;
+    margin-right: 4px;
+}
+
+ul#user img {
+    text-decoration: none;
+    display: block;
+    width: 20px;
+    height: 24px;
+    line-height: 25px;
+    padding: 35px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+}
+
+ul#user a {
+    color: #343535;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding-left: 40px;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+}
+
+ul#user .sub a {
+    margin-top: 0px;
+}
+ul#user li:hover a {
+    background-color: white;
+    border-top: 1px solid #f46a48;
+}
+
+ul#user li:hover a:hover {
+    background-color: #FF9B50;
+}
+
+ul#user ul.sub {
+    display: none;
+    position: absolute;
+    top: 81.5px;
+    left: -40.5px;
+}
+
+ul#user li:hover .sub {
+    display: block;
+}
+/*                          Add bag icon                        */
+#add img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 1083px;
+    top: -5px;
+    padding: 33px;
+}
+/*                           Search icon                        */
+#search img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 1174px;
+    top: -5px;
+    padding: 32px;
+
+}
+#adm {
+    position: absolute;
+    top:0px;
+    left: 1000px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#adm a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f46a48;
+}
+
+#logout {
+    position: absolute;
+    top:0px;
+    left: 1129px;
+    padding-left: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#logout a {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    color: #f46a48;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 24px;
+    padding-top: 25px;
+
+}
+
+
+#wrap {
+    width: 680px;
+    height: 76px;
+    margin-left: 310px;
+    margin-top: -82px;
+    position: absolute;
+    z-index: 900;
+}
+
+#wrap a {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    padding-top: 10px;
+    width: 110px;
+    margin-left: 50px;
+}
+
+#wrap a,visited {
+    color: #f46a48;
+    display:block;
+    width: 110px;
+    margin-left: 49px;
+    padding-top: 33px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 19px;
+    text-decoration: none;
+}
+
+#wrap a:hover {
+    color: #f46a48;
+    text-decoration: none;
+    border: 1px solid #f46a48;
+    padding-left: 19px;
+    padding-right: 18.5px;
+    padding-bottom: 25px;
+    padding-top: 32px;
+}

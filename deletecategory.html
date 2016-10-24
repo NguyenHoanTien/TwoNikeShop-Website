@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head lang="en">
+        <meta charset="UTF-8">
+        <title>Delete category page</title>
+        <link rel="stylesheet" href="../stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="../stylesheet/catelogy.css" type="text/css" />
+        <link rel='stylesheet' href='../js/Fixsize.js' type='text/css'/>
+        <script src="../js/Fixsize.js"></script>
+</head>
+<body onload="Load()">
+    <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="../images/nav-ad.jpg">
+            </div>
+            <div id="logo">
+                    <img src="../images/logo.png" alt="Logo" title="Nike Shoes !!!">
+            </div>
+            <div id="wrap">
+                <a href="../addcategory">Categogy</a>
+                <a href="../Addproduct">Add product</a>
+                <a href="../productDisplay">Product</a>
+            </div>
+            <div id="adm">
+                <a href="../adminview">Admin shop</a>
+            </div>
+            <div id="logout">
+                <a href="/">logout</a>
+            </div>
+    </nav>
+
+    <div id="page" >
+        <div id="cate-part">
+            <form method='post' action='/deletecategory/{{ category.key.id() }}'>
+            <label >Delete category</label>
+                <ul>
+            <p>You are going to delete <a>{{category.name}}</a> category, all product will be deleted with this category</p>
+            <p> Are you sure to continue ?</p>
+                </ul>
+                <div id="unique">
+                    <button class="button" type='submit'>Delete</button>
+                    <a  href='/addcategory'><button class="button">Cancel</button></a>
+                </div>
+            </form>
+        </div>
+        <br>
+    </div>
+    <div id="blank2"></div>
+<div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="../images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="../images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="../images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="../images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="../images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="../images/bar.png">
+            </div>
+        </div>
+</body>
+</html>
+{% endautoescape %}
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Terms of Use page</title>
+        <link rel="stylesheet" href="stylesheet/navigationbar.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/footer.css" type="text/css" />
+        <link rel="stylesheet" href="stylesheet/term.css" type="text/css" />
+        <link rel='stylesheet' href='js/Fixsize.js' type='text/css'/>
+        <script src="js/Fixsize.js"></script>
+
+    </head>
+    <body>
+        <!--                           Navigation bar structure                         -->
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="images/nav.png">
+            </div>
+            <div id="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="Logo" title="Nike Shoes !!!"></a>
+            </div>
+            <div id="nav_wrapper">
+                 {% for category in categories %}
+                     <a href="/category/{{category.key.id()}}">{{category.name}} </a>
+                {% endfor %}
+            </div>
+            <ul id="user">
+                <li>
+                    <img id="user-ic" src="images/login_icon.png" alt="user">
+                    <ul class="sub">
+                        <li><a href="login">Login</a></li>
+                        <li><a href="register">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="add">
+                <a href="#">
+                    <img src="images/bag_icon.png" alt="add" title="Shopping Cart"></a>
+            </div>
+            <div id="search">
+                <a href="#">
+                    <img src="images/search_icon.png" alt="search"></a>
+            </div>
+        </nav>
+
+<!--                                Main page                           -->
+       <div id="content_term">
+            <h1>Terms of Use</h1>
+            <p>PLEASE READ THESE TERMS AND CONDITIONS OF USE CAREFULLY BEFORE USING THIS WEBSITE. By using this Website, you signify your consent to these terms of use. If you do not agree to these terms of use, please do not use this Website. We reserve the right, at our discretion, to change, modify, add, or remove portions of these terms at any time. Please check these terms periodically for changes. Your continued use of this Website following the posting of changes to these terms (including our Privacy Statement), subject to our procedures for material changes to our  <a id="privacy_statement" href="privacy">Privacy Statement</a> will mean you accept those changes.</p>
+            <h4>RESTRICTIONS ON USE OF MATERIALS</h4>
+            <p>Except as otherwise permitted by these Terms of Use, no material from this Website or any Website owned, operated, licensed or controlled by Eastbay may be modified, copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way, except that you may print one hard copy or download one copy of the materials on any single computer for your personal, noncommercial home use, or to place an order to purchase product from Two Store, provided you keep intact all copyright and other proprietary notices. Use of the materials for any other purpose, modification of the materials, or use of the materials on any other website or networked computer environment is strictly prohibited. Absolutely no framing of this Website is permitted without the prior written consent of Two Store. Except as expressly stated in this legal notice, no right or license to the materials, or any portion thereof, shall be granted or implied.</p>
+            <h4>USE OF WIDGETS</h4>
+            <p>Our widgets are tools that you may place on your website to permit your visitors to access our Website (each, the "Widget"). Subject to your compliance with these Terms of Use, we hereby grant you a non-exclusive, non-transferable, non-sublicensable, personal, revocable license to use and display the Widget on your website solely for your own personal, non-commercial use. You may not use the Widget for any other purpose without our prior written consent, and nothing in these Terms of Use shall be deemed to grant you any right, title or interest in the Widget. In addition, you may not:</p>
+            <p>1  Use the Widget to offer or promote, or otherwise use the Widget in association with, any products or services for sale.<br>
+                2  Use the Widget (or any content displayed in connection with or through it) in any manner that would constitute an endorsement by us of any product, service, activity or brand contained on your website.<br>
+                3  Place the Widget on any website that includes content that is offensive, harassing, threatening, abusive, discriminatory, vulgar, pornographic or otherwise in appropriate, as determined by us in our sole discretion.<br>
+                4  Use the Widget in any manner that prevents the end user of your website from linking directly to the applicable page of our Website.<br>
+                We reserve the right to discontinue providing any Widget at any time. We further reserve the right to direct you to cease displaying or otherwise using any Widget, for any or no reason and without liability to you or any third party.<br></p>
+
+            <h4>ACCOUNTS</h4>
+            <p>You may be required to create an account and specify a password to use certain features on our Website. You agree to provide, maintain and update true, accurate, current and complete information about yourself as prompted by the registration processes. You may not impersonate any person or entity or misrepresent your identity or affiliation with any person or entity, including using another person's username, password, or other account information. <br>
+               You are entirely responsible for maintaining the confidentiality of your password and your account, and you are entirely responsible for all activity made by you or anyone that uses your account. You agree to safeguard your password from access by others. If you believe that your account has been compromised, you must immediately contact us by emailing twostore_gmail.com or calling 1.800.1000. Two Store shall not be responsible for any loss that results from the unauthorized use of your password, with or without your knowledge, and you agree to indemnify and hold harmless Two Store for losses incurred by Two Store or another party due to someone else using your account as a result of your failure to use reasonable care to safeguard your password.</p>
+            <h4>USE OF WEBSITE</h4>
+            <p>Impersonation of others, including a Twostore employee or representative, as well as another user is prohibited. You may not upload to, distribute, or otherwise publish through the Website any content which is libelous, defamatory, obscene, threatening, an invasion of privacy or publicity rights, abusive, illegal, or otherwise objectionable which may constitute or encourage a criminal offense, violate the rights of any party or which may otherwise give rise to liability or violate any law. You may not upload commercial content on the Website or use the Website to solicit others for any other commercial online service or other organization.<br>
+                You may not without the prior written permission of Twostore, use any computer code, data mining software, "robot", "bot", "spider", "scraper" or other automatic device, or program, algorithm or methodology having similar processes or functionality, or any manual process, to monitor or copy any of the web pages, data or content found on this Website or accessed through this Website. You may not engage in the mass downloading of files from this Website; use the computer processing power of this Website for purposes other than those permitted above; or flood this Website with electronic traffic designed to slow or stop its operation. You may not establish links to or from other websites to this Website without the prior written consent of Twostore.</p>
+            <h4>THIRD-PARTY COPYRIGHTS</h4>
+            <p>If you believe any Content on the Website infringes your copyright, you may request removal of such Content (or access thereto) from this web Website by contacting Eastbay as set forth below and providing the following information:<br> </p>
+            <ul>
+                <li>Identification of the copyrighted work that you believe to be infringed. Please describe the work and, where possible, include a copy or the location (e.g., URL) of an authorized version of the work.</li>
+                <li>Identification of the material that you believe to be infringing and its location. Please describe the material, and provide us with its URL or any other pertinent information that will allow us to locate the material.</li>
+                <li>Your name, address, telephone number, and e-mail address.</li>
+                <li>A statement that you have a good faith belief that the complained of use of the materials is not authorized by the copyright owner, its agent, or the law.</li>
+                <li>A statement that the information that you have supplied is accurate, and indicating that "under penalty of perjury," you are the copyright owner or are authorized to act on the copyright owner's behalf.</li>
+                <li>A signature or the electronic equivalent from the copyright holder or authorized representative.</li>
+            </ul>
+            <p>In an effort to protect the rights of copyright owners, Twostore maintains a policy for the termination, in appropriate circumstances, of subscribers and account holders of the Website who are repeat infringers.</p>
+
+            <h4>INTELLECTUAL PROPERTY</h4>
+            <p>All content included on this Website, such as text, graphics, code, logos, button icons, images, audio clips, widgets and software, and the compilation of such content (i.e. collection, arrangement and assembly) is the exclusive property of Twostore or its suppliers and is protected by U.S. and other copyright laws and international treaties. The content and software on this Website may be used as a shopping resource. Any other use, including the reproduction, modification, distribution, transmission, republication, display or performance, of the content on this Website is strictly prohibited. Twostore is a registered trademark of Twostore, Inc. All other product names contained in this Website are trademarks or registered trademarks of their respective owners. The use or misuse of these trademarks except as expressly authorized is prohibited. Twostore enforces its intellectual property rights to the fullest extent of the law</p>
+            <h4>PRODUCT ORDERS</h4>
+            <p>All orders placed through this Website are subject to Twostore's acceptance. Two store may refuse to accept or may cancel any order, whether or not the order has been confirmed, for any or no reason, and without liability to you or anyone else. If your payment method has already been charged for an order that is later cancelled, Twostore shall issue you a refund.</p>
+
+        </div>
+        <div id="grad"></div>
+        <!--                               Footer structure                             -->
+        <div id="footer">
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="contact">Contact Us</a>
+                    <a href="term">Terms of Use</a>
+                    <a href="privacy">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="images/bar.png">
+            </div>
+        </div>
+    </body>
+</html>
+{% endautoescape %}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/1st/.idea/1st.iml" filepath="$USER_HOME$/1st/.idea/1st.iml" />
+      <module fileurl="file://$USER_HOME$/a2/.idea/assignment.iml" filepath="$USER_HOME$/a2/.idea/assignment.iml" />
+      <module fileurl="file://$USER_HOME$/badminton-store/.idea/badminton-store.iml" filepath="$USER_HOME$/badminton-store/.idea/badminton-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/model.iml" filepath="$PROJECT_DIR$/.idea/model.iml" />
+      <module fileurl="file://$USER_HOME$/moobhd/.idea/moobhd.iml" filepath="$USER_HOME$/moobhd/.idea/moobhd.iml" />
+      <module fileurl="file://$USER_HOME$/moobhd.tar/.idea/moobhd.tar.iml" filepath="$USER_HOME$/moobhd.tar/.idea/moobhd.tar.iml" />
+      <module fileurl="file://$USER_HOME$/test/.idea/test.iml" filepath="$USER_HOME$/test/.idea/test.iml" />
+    </modules>
+  </component>
+</project>

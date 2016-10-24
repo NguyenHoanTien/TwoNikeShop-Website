@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Add Category page</title>
+    <link rel="stylesheet" href="stylesheet/navigationbar.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet/footer.css" type="text/css" />
+    <link rel="stylesheet" href="stylesheet/catelogy.css" type="text/css" />
+    <link rel='stylesheet' href='js/Fixsize.js' type='text/css'/>
+    <script src="js/Fixsize.js"></script>
+    <script src="//cdn.ckeditor.com/4.4.7/full/ckeditor.js"> type = 'text/javascript'</script>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["category"].value;
+            if (x == null || x == "") {
+                alert("Product name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body onload="Load()">
+        <nav>
+            <div id="navigation">
+                <img id="nav-bar" src="../images/nav-ad.jpg">
+            </div>
+            <div id="logo">
+                    <img src="../images/logo.png" alt="Logo" title="Nike Shoes !!!">
+            </div>
+            <div id="wrap">
+                <a href="../addcategory">Categogy</a>
+                <a href="../Addproduct">Add product</a>
+                <a href="../productDisplay">Product</a>
+            </div>
+            <div id="adm">
+                <a href="../adminview">Admin shop</a>
+            </div>
+            <div id="logout">
+                <a href="/">logout</a>
+            </div>
+        </nav>
+
+        <div id="page">
+            <form name="myForm" action="/addcategory" method="post" onsubmit="return validateForm()">
+                <div id="cate-part">
+                    <label for="category">Add new Category </label>
+                    <br>
+                    <input id ="name-cate" type="text" name="category" value=""/>
+                    <input id="button" type="submit" value="Add Category">
+                </div>
+
+            </form>
+            <div id="list-cate">
+                <h2>List of category</h2>
+                {% for category in categories %}
+                <ul>
+                    <p href="/category/{{category.key.id()}}">{{ category.name }}</p>
+                </ul>
+                <a id="edit" href='/editcategory/{{ category.key.id() }}'><button class ="button">Edit</button></a>
+                <a id="delete" href='/deletecategory/{{ category.key.id() }}'><button class ="button">Delete</button></a>
+                {% endfor %}
+            </div>
+        </div>
+        <div id="blank"></div>
+
+<div id="footer">
+            <div id="grad"></div>
+            <div class="icon">
+                <a href="#">
+                    <img id="FB_icon" src="../images/FB_icon.png" alt="Facebook" title="FaceBook"></a>
+                <a href="#">
+                    <img id="TT_icon" src="../images/TT_icon.png" alt="Twitter" title="Twitter"></a>
+                <a href="#">
+                    <img id="P_icon" src="../images/P_icon.png" alt="Pinterest" title="Pinterest"></a>
+                <a href="#">
+                    <img id="In_icon" src="../images/In_icon.png" alt="Instagram" title="Instagram"></a>
+                <a href="#">
+                    <img id="G_icon" src="../images/G_icon.png" alt="Google plus" title="Google Plus"></a>
+            </div>
+            <div id="footer_wrapper">
+                <ul>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy policy</a>
+                </ul>
+            </div>
+            <span id="copyright">2015 TWO, Inc. All rights reserved.</span>
+            <div id="bar">
+                <img id="left-bar" src="../images/bar.png">
+            </div>
+        </div>
+
+
+</body>
+</html>
+{% endautoescape %}
+
+
+
+
+

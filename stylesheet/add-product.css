@@ -1,0 +1,150 @@
+html{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    overflow-y: scroll;
+    font-family: Arial;
+    font-size: 100%;
+    background-color: #fdfdfd;
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:0px;
+    left:0px;
+}
+
+
+#page {
+    width: 1100px;
+    margin-top: 130px;
+    margin-left: 100px;
+}
+
+#title {
+    font-size: 24px;
+    margin-left: 390px;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.info {
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.info h3 {
+    font-size: 22px;
+    width: 150px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.info ul {
+    width: 500px;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 18px;
+    margin-bottom: -20px;
+}
+
+.info ul input {
+    border: 1.5px solid #f46a48;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    position: relative;
+    top: -10px;
+    left: 100px;
+    width: 250px;
+    height: 30px;
+}
+
+.info-u {
+    height: 50px;
+
+}
+.info-u ul label {
+    font-size: 22px;
+    width: 150px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.info-u select {
+    border: 1.5px solid #f46a48;
+    background-color: #fdfdfd;
+    padding-left: 110px;
+    margin-bottom: 5px;
+    margin-left: 79px;
+    width: 263px;
+    height: 35px;
+
+}
+
+.info-u ul input {
+    border: 1.5px solid #f46a48;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-left: 120px;
+    width: 250px;
+    height: 30px;
+}
+
+.left {
+    margin-bottom: 80px;
+    margin-left: 150px;
+}
+
+.right {
+    margin-top: -179px;
+    margin-left: 580px;
+}
+
+.right1 {
+    margin-top: -237px;
+    margin-left: 580px;
+}
+#sub {
+    font-size: 20px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #f46a48;
+    color: #fdfdfd;
+    background-color: #f46a48;
+    margin-left: 850px;
+    margin-top: 30px;
+}
+
+#sub:hover {
+    color: #f46a48;
+    background-color: #fdfdfd;
+}
+
+#cancel {
+    float: right;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    border: 1px solid #f46a48;
+    color: #fdfdfd;
+    background-color: #f46a48;
+    text-decoration: none;
+    margin-top: -30px;
+    margin-right: 10px;
+}
+
+#cancel:hover {
+    color: #f46a48;
+    background-color: #fdfdfd;
+}
