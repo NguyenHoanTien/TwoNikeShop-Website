@@ -11,3 +11,5 @@ Account admin:
 Reference to
              slide show    : http://zlatanblog.com/2012/03/23/pure-css3-slidesho/
              Fix size       : http://khuntronak.blogspot.com/2013/12/how-to-fixsolve-screen-resolution.html
+
+______________________________________________
